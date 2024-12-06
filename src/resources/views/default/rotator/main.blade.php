@@ -1,6 +1,6 @@
 <div class="mainRotator ">
     @if($rotator->arrows)
-        <button class="prev"> ❰</button>
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
     @endif
     <div class="mainRotator__items" id="rotator{{$rotator->id}}">
         @foreach($rotator->gallery->items as $item)
@@ -15,7 +15,7 @@
                                 <h1 class="text-anime-style-3">{{$item->name}}</h1>
                                 {!! str_replace('<p>', '<p data-aos="fade-left" data-aos-duration="1000">', $item->text) !!}
                                 <div class="btn-area2" data-aos="fade-left" data-aos-duration="1200">
-                                    <a href="contact.html" class="header-btn4"><img src="assets/img/icons/logo-icon4.svg" alt=""> Zobacz galerię</a>
+                                    <a href="{{route('gallery.show')}}" class="header-btn4"><img src="{{asset('img/icons/logo-icon4.svg')}}" alt=""> Zobacz galerię</a>
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,7 @@
         @endforeach
     </div>
     @if($rotator->arrows)
-        <button class="next"> ❱</button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
     @endif
 </div>
 @push('scripts.body.bottom')

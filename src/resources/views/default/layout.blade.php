@@ -179,6 +179,7 @@
                         </div>
                         <div class="contact-info-text">
                             <a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">{{getConstField('phone')}}</a>
+                            <a href="tel:{{str_replace(' ', '', getConstField('phone2'))}}">{{getConstField('phone2')}}</a>
                         </div>
                     </div>
 
@@ -216,7 +217,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="copyright-area">
+                <div class="copyright-area text-center">
                     <p><?php echo date("Y") ?> &copy; Wszelkie prawa zastrzeżone. Strona stworzona przez: <a href="https://palmax.com.pl">Palmax</a></p>
                 </div>
             </div>

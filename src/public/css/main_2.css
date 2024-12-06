@@ -1645,7 +1645,6 @@ Location:
 .about4-section-area {
   position: relative;
   z-index: 1;
-  margin-top: -260px;
 }
 @media (max-width: 767px) {
   .about4-section-area {
@@ -1743,7 +1742,6 @@ Location:
 .about-inner-section-area {
   position: relative;
   z-index: 1;
-  background: var(--ztc-bg-bg-3);
 }
 .about-inner-section-area .about-inner-header {
   margin-bottom: 60px;
@@ -1758,19 +1756,7 @@ Location:
     margin-bottom: 0;
   }
 }
-.about-inner-section-area .heading2.text {
-  margin-bottom: 60px;
-}
-@media (max-width: 767px) {
-  .about-inner-section-area .heading2.text {
-    margin-bottom: 30px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-inner-section-area .heading2.text {
-    margin-bottom: 30px;
-  }
-}
+
 .about-inner-section-area .about-boxarea {
   position: relative;
   z-index: 1;
@@ -1801,7 +1787,7 @@ Location:
   border-radius: 50%;
   margin: 0 auto;
 }
-.about-inner-section-area .about-boxarea a {
+.about-inner-section-area .about-boxarea h3 {
   color: var(--ztc-text-text-3);
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s20);
@@ -2579,7 +2565,7 @@ Location:
   filter: none;
   transition: all 0.4s;
 }
-.service4-section-area .service-boxarea:hover .content-area a {
+.service4-section-area .service-boxarea:hover .content-area h3 {
   color: var(--ztc-text-text-1);
   transition: all 0.4s;
 }
@@ -2617,10 +2603,9 @@ Location:
 .service4-section-area .service-boxarea .content-area {
   background: var(--ztc-bg-bg-1);
   border-radius: 8px;
-  padding: 54px 24px 24px 24px;
+  padding: 30px;
   position: relative;
   z-index: 1;
-  margin: -50px 20px 0 20px;
   transition: all 0.4s;
 }
 .service4-section-area .service-boxarea .content-area .icons {
@@ -2639,7 +2624,7 @@ Location:
   filter: brightness(0) invert(1);
   transition: all 0.4s;
 }
-.service4-section-area .service-boxarea .content-area a {
+.service4-section-area .service-boxarea .content-area h3 {
   color: var(--ztc-text-text-11);
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s20);
@@ -3803,12 +3788,12 @@ ul.pagination li a.active {
 }
 @media (max-width: 767px) {
   .hero4-section-area {
-    padding: 160px 0 60px;
+    padding: 160px 0 160px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero4-section-area {
-    padding: 160px 0 60px;
+    padding: 160px 0 160px;
   }
 }
 @media (min-width: 2000px) {
@@ -3867,6 +3852,18 @@ ul.pagination li a.active {
   top: -200px;
   height: 900px;
 }
+
+
+.hero4-section-area .bg-img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
 @media (max-width: 767px) {
   .hero4-section-area .bg-img {
     top: 0;
@@ -3900,8 +3897,13 @@ ul.pagination li a.active {
     margin-top: -150px;
   }
 }
+.hero4-section-area .hero4-header .header-btn4 img{
+    margin-right: 5px;
+}
 .hero4-section-area .hero4-header .header-btn4 {
-  margin-top: 32px;
+     margin-top: 32px;
+    display: flex;
+    width: fit-content;
 }
 .hero4-section-area .hero4-header .header-btn4:hover {
   background: var(--ztc-bg-bg-1);
@@ -3999,11 +4001,8 @@ ul.pagination li a.active {
 }
 
 .inner-header-section-area {
-  background-image: url(../img/bg/inner-bg1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 280px 0 80px;
+  background-color: #ECF4F6;
+  padding: 130px 0 130px;
   overflow: hidden;
   position: relative;
 }
@@ -4536,16 +4535,7 @@ ul.pagination li a.active {
   transition: all 0.4s;
 }
 
-.mobile-header.mobile-haeder4 {
-  background: var(--ztc-bg-bg-9);
-  position: fixed;
-}
-.mobile-header.mobile-haeder4 .dots-menu {
-  color: var(--ztc-bg-bg-1);
-}
 .mobile-header.mobile-haeder4 .mobile-logo img {
-  filter: brightness(0) invert(1);
-  height: 50px;
   width: 150px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -6533,7 +6523,7 @@ ul.pagination li a.active {
   background-image: url(../img/bg/footer-bg3.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 315px 0 32px;
+  padding: 32px 0 32px;
 }
 .footer4-section-area .elements2 {
   position: absolute;
@@ -6682,13 +6672,7 @@ ul.pagination li a.active {
     padding-left: 0;
   }
 }
-.footer4-section-area .copyright-area {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 24px;
-  border-top: 1px solid #C2CAD1;
-}
+
 @media (max-width: 767px) {
   .footer4-section-area .copyright-area {
     display: inline-block;
@@ -8331,7 +8315,7 @@ body.homepage1-body, html {
   font-family: var(--ztc-family-font1) !important;
   font-size: var(--ztc-font-size-font-s16);
   font-weight: var(--ztc-weight-medium);
-  color: var(--ztc-text-text-1);
+  color: #000;
   display: block;
   transition: all 0.4s;
   padding: 0 20px;
@@ -13440,6 +13424,10 @@ body.homepage1-body, html {
      object-fit: cover;
 }
 
+.gallery4-section-area{
+    background: #ECF4F6;
+}
+
 .gallery4-section-area .gallery-header {
   margin-bottom: 60px;
 }
@@ -13485,14 +13473,6 @@ body.homepage1-body, html {
   overflow: hidden;
   margin-bottom: 30px;
 }
-.gallery4-section-area .gallery-boxarea:hover::after {
-  height: 100%;
-  transition: all 0.6s;
-}
-.gallery4-section-area .gallery-boxarea:hover::before {
-  bottom: -61px;
-  transition: all 0.6s;
-}
 .gallery4-section-area .gallery-boxarea:hover .arrow {
   top: 105px;
   visibility: visible;
@@ -13503,39 +13483,7 @@ body.homepage1-body, html {
   bottom: 32px;
   transition: all 0.8s;
 }
-.gallery4-section-area .gallery-boxarea:hover .img1 {
-  overflow: hidden;
-  transition: all 0.4s;
-}
-.gallery4-section-area .gallery-boxarea:hover .img1 img {
-  transform: scale(1.1) rotate(-4deg);
-  transition: all 0.4s;
-}
-.gallery4-section-area .gallery-boxarea::after {
-  position: absolute;
-  content: "";
-  height: 0;
-  width: 100%;
-  left: 0;
-  top: 0;
-  transition: all 0.6s;
-  background: var(--ztc-text-text-11);
-  opacity: 0.5;
-  border-radius: 8px;
-  z-index: 0;
-}
-.gallery4-section-area .gallery-boxarea::before {
-  position: absolute;
-  content: "";
-  height: 220px;
-  width: 107%;
-  left: -13px;
-  bottom: -300px;
-  transition: all 0.6s;
-  background: var(--ztc-text-text-10);
-  border-radius: 200px 200px 8px 8px;
-  z-index: 1;
-}
+
 .gallery4-section-area .gallery-boxarea .img1 {
   overflow: hidden;
   transition: all 0.4s;

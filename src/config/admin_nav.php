@@ -47,53 +47,53 @@ return [
             'article' => [
                 'label' => 'admin.article.plural',
                 'icon' => 'book',
-                'route_name' => '',
-                'items' => [
-                    'article' => [
-                        'label' => 'admin.article.plural',
-                        'icon' => 'arrow-up-left',
-                        'route_name' => 'admin.article.index',
-                    ],
-                    'article_category' => [
-                        'label' => 'admin.article_category.plural',
-                        'icon' => 'arrow-up-left',
-                        'route_name' => 'admin.article_category.index',
-                    ],
-                ]
+                'route_name' => 'admin.article.index',
+//                'items' => [
+//                    'article' => [
+//                        'label' => 'admin.article.plural',
+//                        'icon' => 'arrow-up-left',
+//                        'route_name' => 'admin.article.index',
+//                    ],
+//                    'article_category' => [
+//                        'label' => 'admin.article_category.plural',
+//                        'icon' => 'arrow-up-left',
+//                        'route_name' => 'admin.article_category.index',
+//                    ],
+//                ]
             ],
-            'offer' => [
-                'label' => 'admin.offer.plural',
-                'icon' => 'database',
-                'route_name' => '',
-                'items' => [
-                    'offer' => [
-                        'label' => 'admin.offer.plural',
-                        'icon' => 'arrow-up-left',
-                        'route_name' => 'admin.offer.index',
-                    ],
-                    'offer_category' => [
-                        'label' => 'admin.offer_category.plural',
-                        'icon' => 'arrow-up-left',
-                        'route_name' => 'admin.offer_category.index',
-                    ],
-                ]
-            ],
+//            'offer' => [
+//                'label' => 'admin.offer.plural',
+//                'icon' => 'database',
+//                'route_name' => '',
+//                'items' => [
+//                    'offer' => [
+//                        'label' => 'admin.offer.plural',
+//                        'icon' => 'arrow-up-left',
+//                        'route_name' => 'admin.offer.index',
+//                    ],
+//                    'offer_category' => [
+//                        'label' => 'admin.offer_category.plural',
+//                        'icon' => 'arrow-up-left',
+//                        'route_name' => 'admin.offer_category.index',
+//                    ],
+//                ]
+//            ],
             'realization' => [
                 'label' => 'admin.realization.plural',
                 'icon' => 'bookmark',
-                'route_name' => '',
-                'items' => [
-                    'realization' => [
-                        'label' => 'admin.realization.plural',
-                        'icon' => 'arrow-up-left',
-                        'route_name' => 'admin.realization.index',
-                    ],
-                    'realization_category' => [
-                        'label' => 'admin.realization_category.plural',
-                        'icon' => 'arrow-up-left',
-                        'route_name' => 'admin.realization_category.index',
-                    ],
-                ]
+                'route_name' => 'admin.realization.index',
+//                'items' => [
+//                    'realization' => [
+//                        'label' => 'admin.realization.plural',
+//                        'icon' => 'arrow-up-left',
+//                        'route_name' => 'admin.realization.index',
+//                    ],
+//                    'realization_category' => [
+//                        'label' => 'admin.realization_category.plural',
+//                        'icon' => 'arrow-up-left',
+//                        'route_name' => 'admin.realization_category.index',
+//                    ],
+//                ]
             ],
         ]
     ],

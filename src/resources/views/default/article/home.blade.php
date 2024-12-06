@@ -1,6 +1,13 @@
-<h2>article home</h2>
-@foreach($items as $item)
-    <li>
-        <a href="{{route('article.show.'.$item->id)}}">{{$item->title}}</a>
-    </li>
-@endforeach
+<div class="row">
+    @foreach($items as $item)
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duration="800">
+            <div class="service-boxarea">
+                <div class="content-area">
+                    <h3>{{$item->title}}</h3>
+                    <div class="space16"></div>
+                    {!! $item->text !!}
+                </div>
+            </div>
+        </div>
+    @endforeach
+</div>
