@@ -1656,11 +1656,7 @@ Location:
     margin: 0;
   }
 }
-@media only screen and (min-width: 1400px) and (max-width: 1599px) {
-  .about4-section-area {
-    margin-top: -360px;
-  }
-}
+
 @media (max-width: 767px) {
   .about4-section-area .about-header {
     margin-bottom: 30px;
