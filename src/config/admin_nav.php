@@ -97,32 +97,32 @@ return [
             ],
         ]
     ],
-    [
-        'label' => 'admin.nav.label.settings',
-        'icon' => '',
-        'items' => [
-            'settings' => [
-                'label' => 'admin.nav.settings',
-                'icon' => 'settings',
-                'route_name' => '',
-                'items' => [
-                    'site_lang' => [
-                        'label' => 'admin.site_lang.plural',
-                        'icon' => 'flag',
-                        'route_name' => 'admin.site_lang.index',
-                    ],
-                    'smtp_settings' => [
-                        'label' => 'admin.smtp_settings.plural',
-                        'icon' => 'mail',
-                        'route_name' => 'admin.smtp_settings.edit',
-                    ],
-                    'google_app_settings' => [
-                        'label' => 'admin.google_app_settings.plural',
-                        'icon' => 'command',
-                        'route_name' => 'admin.google_app_settings.edit',
-                    ],
-                ],
-            ],
-        ]
-    ],
+//    [
+//        'label' => 'admin.nav.label.settings',
+//        'icon' => '',
+//        'items' => [
+//            'settings' => [
+//                'label' => 'admin.nav.settings',
+//                'icon' => 'settings',
+//                'route_name' => '',
+//                'items' => [
+//                    'site_lang' => [
+//                        'label' => 'admin.site_lang.plural',
+//                        'icon' => 'flag',
+//                        'route_name' => 'admin.site_lang.index',
+//                    ],
+//                    'smtp_settings' => [
+//                        'label' => 'admin.smtp_settings.plural',
+//                        'icon' => 'mail',
+//                        'route_name' => 'admin.smtp_settings.edit',
+//                    ],
+//                    'google_app_settings' => [
+//                        'label' => 'admin.google_app_settings.plural',
+//                        'icon' => 'command',
+//                        'route_name' => 'admin.google_app_settings.edit',
+//                    ],
+//                ],
+//            ],
+//        ]
+//    ],
 ];
