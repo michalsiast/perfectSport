@@ -15,7 +15,7 @@
                                 <h1 class="text-anime-style-3">{{$item->name}}</h1>
                                 {!! str_replace('<p>', '<p data-aos="fade-left" data-aos-duration="1000">', $item->text) !!}
                                 <div class="btn-area2" data-aos="fade-left" data-aos-duration="1200">
-                                    <a href="#contact_us" class="header-btn4" id="contact_us_link"><img src="{{asset('img/icons/logo-icon4.svg')}}" alt=""> Skontaktuj się z nami</a>
+                                    <a href="#contact_us" style="scroll-margin-top: 200px;" class="header-btn4" id="contact_us_link"><img src="{{asset('img/icons/logo-icon4.svg')}}" alt=""> Skontaktuj się z nami</a>
                                 </div>
                             </div>
                         </div>
