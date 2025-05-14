@@ -15,7 +15,7 @@
                                 <h1 class="text-anime-style-3">{{$item->name}}</h1>
                                 {!! str_replace('<p>', '<p data-aos="fade-left" data-aos-duration="1000">', $item->text) !!}
                                 <div class="btn-area2" data-aos="fade-left" data-aos-duration="1200">
-                                    <a href="#contact_us" class="header-btn4"><img src="{{asset('img/icons/logo-icon4.svg')}}" alt=""> Skontaktuj się z nami</a>
+                                    <a href="#contact_us" class="header-btn4" id="contact_us_link"><img src="{{asset('img/icons/logo-icon4.svg')}}" alt=""> Skontaktuj się z nami</a>
                                 </div>
                             </div>
                         </div>
@@ -30,6 +30,20 @@
 </div>
 @push('scripts.body.bottom')
     <script>
+        const link = document.getElementById('contact_us_link');
+
+        if (link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const id = this.getAttribute('href').substring(1);
+                const element = document.getElementById(id);
+                const offset = 120;
+
+                const top = element.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({ top, behavior: 'smooth' });
+            });
+        }
+
         $('#rotator{{$rotator->id}}').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
