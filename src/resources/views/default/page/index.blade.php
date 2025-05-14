@@ -136,7 +136,7 @@
     </div>
 </div>
 
-<div class="about4-section-area sp1" id="contact_us">
+<div class="about4-section-area sp1" id="contact_us" style="scroll-margin-top: 200px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
