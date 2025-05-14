@@ -1,6 +1,7 @@
 ;(function($){
 
 $(document).ready(function(){
+
 //========== HEADER ACTIVE STRATS ============= //
 if ($("#header").length > 0) {
 $(window).on("scroll", function (event) {

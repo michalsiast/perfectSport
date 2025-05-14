@@ -30,9 +30,19 @@
 </div>
 @push('scripts.body.bottom')
     <script>
-        document.getElementById('contact_us_link').addEventListener('click', function(e) {
-            e.preventDefault(); // zapobiega zmianie adresu URL (dodaniu #)
-        });
+        const link = document.getElementById('contact_us_link');
+
+        if (link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const id = this.getAttribute('href').substring(1);
+                const element = document.getElementById(id);
+                const offset = 200;
+
+                const top = element.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({ top, behavior: 'smooth' });
+            });
+        }
         $('#rotator{{$rotator->id}}').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
