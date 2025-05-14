@@ -1,7 +1,19 @@
 ;(function($){
 
 $(document).ready(function(){
+    const link = document.getElementById('contact_us_link');
 
+    if (link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const id = this.getAttribute('href').substring(1);
+            const element = document.getElementById(id);
+            const offset = 200;
+
+            const top = element.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top, behavior: 'smooth' });
+        });
+    }
 //========== HEADER ACTIVE STRATS ============= //
 if ($("#header").length > 0) {
 $(window).on("scroll", function (event) {
@@ -15,7 +27,7 @@ $(window).on("scroll", function (event) {
 }
 //========== HEADER ACTIVE ENDS ============= //
 
-//========== PAGE PROGRESS STARTS ============= // 
+//========== PAGE PROGRESS STARTS ============= //
   var progressPath = document.querySelector(".progress-wrap path");
   var pathLength = progressPath.getTotalLength();
   progressPath.style.transition = progressPath.style.WebkitTransition =
@@ -47,7 +59,7 @@ $(window).on("scroll", function (event) {
     jQuery("html, body").animate({ scrollTop: 0 }, duration);
     return false;
   });
-//========== PAGE PROGRESS ENDS ============= // 
+//========== PAGE PROGRESS ENDS ============= //
 
 //========== VIDEO POPUP STARTS ============= //
    if ($(".popup-youtube").length > 0) {
@@ -74,7 +86,7 @@ $('.cs_hover_active').hover(function () {
 //========== COUNTER UP ============= //
 const ucounter = $('.counter');
 if (ucounter.length > 0) {
- ucounter.countUp();  
+ ucounter.countUp();
 };
 //========== COUNTER UP ============= //
 
@@ -366,7 +378,7 @@ $('.slider-nav').slick({
         infinite: true,
         }
         },
-    
+
         {
           breakpoint: 600,
           settings: {
@@ -374,7 +386,7 @@ $('.slider-nav').slick({
           slidesToScroll: 1,
         }
         },
-    
+
         {
           breakpoint: 480,
           settings: {
@@ -382,7 +394,7 @@ $('.slider-nav').slick({
           slidesToScroll: 1
         }
         },
-    
+
         {
           breakpoint: 375,
           settings: {
@@ -390,7 +402,7 @@ $('.slider-nav').slick({
           slidesToScroll: 1
         }
         },
-    
+
         {
           breakpoint: 320,
           settings: {
@@ -453,7 +465,7 @@ $('.brand-slider-area').owlCarousel({
         }
     }
   });
-  
+
   $(".tes2-slider-bottom").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -549,7 +561,7 @@ $('.brand-slider-area').owlCarousel({
     nextArrow: $('.testimonial-prev-arrow'),
   });
 //========== TESTIMONIAL AREA ============= //
-  
+
 //========== PRELOADER AREA ============= //
 $(window).on("load", function (event) {
   setTimeout(function () {
