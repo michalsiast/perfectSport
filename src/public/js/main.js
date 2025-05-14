@@ -1,7 +1,19 @@
 ;(function($){
 
 $(document).ready(function(){
+    const link = document.getElementById('contact_us_link');
 
+    if (link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const id = this.getAttribute('href').substring(1);
+            const element = document.getElementById(id);
+            const offset = 200;
+
+            const top = element.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top, behavior: 'smooth' });
+        });
+    }
 //========== HEADER ACTIVE STRATS ============= //
 if ($("#header").length > 0) {
 $(window).on("scroll", function (event) {
