@@ -30,6 +30,9 @@
 </div>
 @push('scripts.body.bottom')
     <script>
+        document.getElementById('contact_us_link').addEventListener('click', function(e) {
+            e.preventDefault(); // zapobiega zmianie adresu URL (dodaniu #)
+        });
         $('#rotator{{$rotator->id}}').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
